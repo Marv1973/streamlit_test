@@ -3,11 +3,6 @@
 from pandas import from_dummies
 import streamlit as st
 
-# load env and raise error if not loaded
-from dotenv import load_dotenv, find_dotenv
-loaded=load_dotenv("C:/Users/marv7/Python/.env")
-if not loaded:
-    raise ValueError("File not loaded")
 
 from langchain_groq import ChatGroq
 from langchain.prompts import ChatPromptTemplate
